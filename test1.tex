@@ -1,0 +1,30 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath, amsthm, amssymb, graphicx}
+\usepackage[UTF8]{ctex}
+\usepackage[bookmarks=true, colorlinks, citecolor=blue, linkcolor=black]{hyperref}
+\begin{document}
+$$f(x+\Delta x,y)-f(x,y)\approx f_X(x,y)\cdot \Delta x$$
+偏增量,偏微分
+全增量:多元函数各个自变量都取增量时,因变量获得的增量$\Delta z=f_x(x,y)\Delta x + f_y(x,y)\Delta y + \varepsilon_1 \Delta x + \varepsilon_2 \Delta y$其中$\lim_{\Delta y \to 0}\varepsilon_2 = 0,\lim_{\Delta x \to 0}\varepsilon_1 = 0$\\
+若$$\Delta z = A\cdot\Delta x + B \cdot \Delta y +o(\rho)$$ A,B不依赖于$\Delta x,\Delta y$仅与x,y有关,$\rho=\sqrt{\Delta x^2 + \Delta y^2}$,称函数f(x,y)在点(x,y)处可微分
+$\Delta z = A\cdot\Delta x + B \cdot \Delta y$称为函数f在(x,y)处的全微分
+\subsection{函数可微分条件}
+\subsubsection{定理一(必要条件)}
+函数z在(x,y)处可微分$\Rightarrow (x,y)$偏导数$\frac{\vartheta z}{\vartheta x},\frac{\vartheta z}{\vartheta y}$必定存在全微分,记作$\Delta z = \frac{\vartheta z}{\vartheta x}\cdot\Delta x + \frac{\vartheta z}{\vartheta y} \cdot \Delta y$
+\subsubsection{定理二(充分条件)}
+函数z,$\frac{\vartheta z}{\vartheta x},\frac{\vartheta z}{\vartheta y}$在点(x,y)连续$\rightarrow$该点可微分.
+可微分$\rightarrow$在点连续$\space$注意:$\Delta x \to 0,\Delta y \to 0$等价$\rho = \sqrt{\Delta x^2 + \Delta y^2}\to 0$.\par
+可微分$\rightarrow$偏导数必存在但不一定连续\\
+结论:\begin{center}
+    1.偏导数连续$\rightarrow$函数可微分\\
+    2.偏导数连续$\nleftarrow$函数可微分
+\end{center}
+二元函数的全微分等于它的两个偏微分之和，即(4)式称之为二元函数微分的叠加原理。
+\subsection{多元函数求导法则}
+定理:若$u=\varphi(t)$及$v=\phi(t)$在t点可导;函数z=f(u,v)在点(u,v)具有连续偏导数
+复合函数$z=f[\varphi(t),\phi(t)]$在t点可导,导数为:
+$$\frac{dz}{dt}=\frac{\vartheta
+ z}{\vartheta u}\cdot\frac{du}{dt}+\frac{\vartheta z}{\vartheta v}\cdot\frac{dv}{dt}$$\\
+同样方式可推广到中间变量多余两个的情况$\to$中间变量不是一元函数而是多元函数\\
+全导数
+\end{document}

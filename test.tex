@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, amssymb, graphicx}
+\usepackage[UTF8]{ctex}
+\usepackage[bookmarks=true, colorlinks, citecolor=blue, linkcolor=black]{hyperref}
+\usepackage{soul} % 导入 soul 包
+\usepackage{color, xcolor} % 颜色包，color 必须导入，xcolor 建议导入
+\begin{document}
+nima
+如果$a>0$, $b>0$, 则
+$$
+a+b>0.
+$$
+\begin{table}[htbp]
+    \centering
+    \caption{表格标题}
+    \begin{tabular}{ccc}
+        1 & 2 & 3 \\
+        4 & 5 & 6 \\
+        7 & 8 & 9
+    \end{tabular}
+\end{table}
+$$
+\begin{bmatrix}
+    a & b \\
+    c & d
+\end{bmatrix}
+$$
+$$
+S=
+\begin{bmatrix}
+|A| &  &    &  \\
+  & |A|  &   &   \\
+  &  & \ddots   &  \\
+  &   &  & |A|  \\
+\end{bmatrix}
+\newline
+\xi 
+$$
+\\
+二重极限不存在判断:设法选择xoy面上过($x_0, y_0$)的两条曲线y=$\phi_1(x)$与$y=\phi_2(x)$使$\lim_{\substack{x \to x_0\\y=\phi_1(x)}}f(x,y)$与$\lim_{\substack{x \to x_0\\y=\phi_2(x)}}f(x,y)$值不相等
+\\
+函数在点$(x_0,y_0)$的某一邻域内有定义,y固定在$y_0$,x在$x_0$处有增量$\Delta x$,有增量$f(x_0+\Delta x,y_0)-f(x_0,y_0)$极限$\lim_{\Delta x \to 0}\frac{f(x_0 + \Delta x, y_0)-f(x_0,y_0)}{\Delta x}$
+\\
+$\frac{\vartheta z}{\vartheta x}\lvert{\substack{x= x_0\\y= y_0}}=\frac{\vartheta f}{\vartheta x}\lvert{\substack{x= x_0\\y= y_0}}$
+\\
+$$\ln{12}$$
+\sethlcolor{yellow}\hl{HEEL}
+\sethlcolor{pink}\hl{HEEL}
+\hl{HEEL} % 没有设置颜色的话，沿用上一次的设置
+\sethlcolor{yellow}\hl{HEEL}
+\begin{equation}
+	\begin{gathered}
+	\begin{matrix} 0 & 1 \\ 1 & 0 \end{matrix}
+	\quad
+	\begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}
+	\quad
+	\begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}
+	\quad
+	\begin{Bmatrix} 1 & 0 \\ 0 & -1 \end{Bmatrix}
+	\quad
+	\begin{vmatrix} a & b \\ c & d \end{vmatrix}
+	\quad
+	\begin{Vmatrix} i & 0 \\ 0 & -i \end{Vmatrix}
+	\end{gathered}
+\end{equation}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=8cm]{图片.jpg}
+    \caption{图片标题}
+\end{figure}
+\end{document}
